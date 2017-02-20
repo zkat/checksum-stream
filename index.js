@@ -13,9 +13,6 @@ function checksumStream (opts) {
       streamSize += chunk.length
       hash.update(chunk, enc)
       cb(null, chunk, enc)
-      if (typeof opts.size === 'number' && streamSize > opts.size) {
-        return stream.end()
-      }
     },
     flush: function (cb) {
       var streamDigest = hash.digest('hex')
