@@ -1,6 +1,6 @@
 {
   "name": "checksum-stream",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Calculates and/or checks data coming through a stream and emits the digest before stream end.",
   "main": "index.js",
   "files": [
